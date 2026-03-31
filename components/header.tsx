@@ -127,7 +127,7 @@ export const HeroHeader = () => {
                                 }}
                                 aria-label="shop"
                                 className={cn("flex items-center space-x-2", mobileMenuOpen && "hidden")}>
-                                <LogoIcon className="h-8 w-auto" priority={true} />
+                                <LogoIcon className="h-8 w-auto" />
                                 <span className="text-lg font-light">QuickShop</span>
                             </Link>
 
@@ -231,7 +231,7 @@ export const HeroHeader = () => {
                                                     }}
                                                     className="w-full flex items-center gap-3 px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors"
                                                 >
-                                                    <item.icon className="size-4 text-red-600" />
+                                                    {item.icon && <item.icon className="size-4 text-red-600" />}
                                                     <span>{item.name}</span>
                                                 </button>
                                                     ) : null}
