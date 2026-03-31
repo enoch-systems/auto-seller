@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { ArrowLeft, Star, Minus, Plus, Loader2, Circle, Upload } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { HeroHeader } from '@/components/header'
-import Footer from '@/components/footer'
 import { useCart, CartItem } from '@/components/cart-context'
 import { getProductById, Product, getAllProducts } from '@/lib/products'
 
