@@ -5,7 +5,6 @@ import { Search, Mail, Phone, MessageCircle, HelpCircle, Send } from 'lucide-rea
 import { Button } from '@/components/ui/button'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { HeroHeader } from './header'
-import Footer from '@/components/footer'
 import { useUI } from '@/contexts/ui-context'
 
 const transitionVariants = {
@@ -346,9 +345,7 @@ const Help = () => {
                     </div>
                 </section>
 
-                {/* Page footer */}
-                <Footer />
-            </main>
+                            </main>
         </>
     )
 }
