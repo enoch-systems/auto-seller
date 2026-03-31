@@ -10,7 +10,6 @@ import { AnimatedGroup } from '@/components/ui/animated-group'
 import { Carousel } from '@/components/ui/carousel'
 import { Featured } from './featured'
 import { HeroHeader } from '@/components/header'
-import Footer from '@/components/footer'
 import { useUI } from '@/contexts/ui-context'
 import { Product, getAllProducts } from '@/lib/products'
 
@@ -304,9 +303,6 @@ export default function HeroSection({ initialFeatured = [] }: HeroSectionProps) 
                 <AnimatedGroup variants={featuredTransitionVariants}>
                     <Featured initialProducts={initialFeatured} />
                 </AnimatedGroup>
-
-                {/* Page footer */}
-                <Footer />
             </main>
         </>
     )
