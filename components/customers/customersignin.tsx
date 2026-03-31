@@ -168,6 +168,8 @@ export default function SignInPage() {
                                 maxLength={11}
                                 placeholder="Enter phone number"
                                 className="h-12"
+                                inputMode="numeric"
+                                pattern="[0-9]*"
                                 onKeyPress={(e) => {
                                     if (!/[0-9]/.test(e.key)) {
                                         e.preventDefault();
@@ -199,6 +201,8 @@ export default function SignInPage() {
                                         maxLength={1}
                                         required
                                         className="w-12 h-12 text-center text-lg font-semibold"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
                                         value={pin[index]}
                                         onChange={(e) => {
                                             const value = e.target.value
